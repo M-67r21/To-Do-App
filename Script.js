@@ -14,6 +14,7 @@ const todo = document.querySelector('.todos ul');
 const itemID = document.querySelector('.filters input[type="radio"]:checked');
 
 addButton.addEventListener('click',()=>{
+    event.preventDefault();
     if(itemInput.value.length > 0){
         addItems(itemInput.value);
         itemInput.value = '';
@@ -55,9 +56,11 @@ function removeItems(item){
 }
 
 todo.addEventListener('click',(event)=>{
+    event.preventDefault();
     if(event.target.classList.contains('remove')){
         removeItems(event.target.parentElement);
     }
+    event.preventDefault();
 })
 
 
@@ -104,12 +107,14 @@ const clear = document.querySelector('.clear');
 const mobClear = document.querySelector('.mob-clear');
 
 clear.addEventListener('click',()=>{
+    event.preventDefault();
     const itemChecked = document.querySelectorAll('.list input[type="checkbox"]:checked');
     itemChecked.forEach(item=>{
         removeItems(item.closest('li'));
     })
 })
 mobClear.addEventListener('click',()=>{
+    event.preventDefault();
     const itemChecked = document.querySelectorAll('.list input[type="checkbox"]:checked');
     itemChecked.forEach(item=>{
         removeItems(item.closest('li'));
