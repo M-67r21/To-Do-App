@@ -50,7 +50,7 @@
   .dragdrop {
     position: absolute;
     bottom: 20px;
-    color: hsl(233, 14%, 35%);
+    color: hsl(0, 0%, 100%);
     align-self: center;
     font-size: 1rem;
   }
@@ -89,7 +89,7 @@
     font-family: "Josefin Sans", sans-serif;
 }
 .todo-input input::placeholder{
-    color: hsl(234, 11%, 52%);
+    color: hsl(240, 100%, 100%);
 }
 .filters{
     display: flex;
@@ -114,7 +114,7 @@
     background-color: hsl(235, 24%, 19%);
     height: 50px;
     font-size: 1rem;
-    color: hsl(233, 11%, 84%);
+    color: hsl(225, 100%, 99%);
     padding: 15px;
     border-bottom: 1px solid hsl(233, 18%, 38%);
     display: flex;
@@ -140,7 +140,7 @@
   }
   .todos input:checked ~ .text{
     text-decoration: line-through;
-    color:hsl(234, 11%, 52%);
+    color:hsl(0, 0%, 100%);
   }
   .remove{
     background: url('images/icon-cross.svg') no-repeat;
@@ -153,7 +153,7 @@
     display: block;
   }
   .footer{
-    color: hsl(233, 14%, 35%);
+    color: hsl(233, 56%, 49%);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -220,7 +220,8 @@
       display: none;
     }
     .background{
-      background: url("images/bg-mobile-dark.jpg") no-repeat;
+      background: aquamarine;
+      /* background: url("images/bg-mobile-dark.jpg") no-repeat; */
       background-size: cover;
       height: 35vh;
     }
