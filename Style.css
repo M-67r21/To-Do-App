@@ -13,8 +13,8 @@
   }
   
   .background {
-    /* background: url("images/bg-desktop-light.jpg") no-repeat; */
-    background-color: aquamarine;
+    background: url("images/bg-desktop-light.jpg") no-repeat;
+    /* background-color: aquamarine; */
     background-size: cover;
     width: 100vw;
     height: 40vh;
@@ -216,20 +216,25 @@
     display: none;
   }
   @media(max-width:600px){
+    *{
+      
+    }
     .clear, .count{
       display: none;
     }
     .background{
-      background: aquamarine;
-      /* background: url("images/bg-mobile-dark.jpg") no-repeat; */
+      /* background: aquamarine; */
+      background: url("images/bg-mobile-dark.jpg") no-repeat;
       background-size: cover;
       height: 35vh;
+      
     }
     .wrapper{
       width: 90%;
     }
     .header h1{
       font-size: 1.5rem;
+      margin-top: 4rem;
     }
     .filters{
       margin: auto;
